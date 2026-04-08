@@ -2,6 +2,11 @@
 -- Default options that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/options.lua
 -- Add any additional options here
 if vim.g.neovide then
-    vim.o.guifont = "FiraMono Nerd Font Mono:h12"
-    vim.g.neovide_scale_factor = 1.0
+  vim.o.guifont = "Iosevka_Nerd_Font_Mono,Fira_Code_Nerd_Font_Mono,Noto_Sans_Mono_CJK_SC,Noto_Color_Emoji:h16"
+  vim.g.neovide_window_blurred = true
+  vim.g.neovide_floating_blur_amount_x = 2.0
+  vim.g.neovide_floating_blur_amount_y = 2.0
+  vim.g.neovide_scale_factor = 1.0
+  vim.g.neovide_cursor_short_animation_length = 1.0
+  vim.g.neovide_cursor_trail_size = 0.0
 end

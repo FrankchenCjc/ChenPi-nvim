@@ -23,8 +23,14 @@ return {
       }
     else
       return {
-        cargo = { allFeatures = true },
-        check = { command = "clippy" },
+        server = {
+          default_settings = {
+            ["rust-analyzer"] = {
+              cargo = { allFeatures = true },
+              check = { command = "clippy" },
+            },
+          },
+        },
       }
     end
   end,

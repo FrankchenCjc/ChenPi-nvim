@@ -1,6 +1,6 @@
-if vim.fn,has("win32") ==1 then
 return {
   "mrcjkb/rustaceanvim",
+  cond = vim.fn.has("win32") == 1,
   opts = {
     server = {
       cmd_env = {
@@ -21,4 +21,3 @@ return {
     },
   },
 }
-end

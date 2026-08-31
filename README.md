@@ -15,3 +15,7 @@
     - 高度
   - 背景透明
 - 使用catputccin-mocha主题
+
+- fix: 使用 winget 安装的 fd，lazygit 无法在win下使用的情况
+- fix: tab补全
+- fix: win环境下配置使用gnullvm的rust工具链

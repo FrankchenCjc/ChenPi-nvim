@@ -17,6 +17,11 @@ return {
                 command = "clippy",
                 target = "x86_64-pc-windows-gnullvm",
               },
+              inlayHints = {
+                typeHints = { enable = false },
+                parameterHints = { enable = false },
+                chainingHints = { enable = false },
+              },
             },
           },
         },
@@ -28,6 +33,11 @@ return {
             ["rust-analyzer"] = {
               cargo = { allFeatures = true },
               check = { command = "clippy" },
+              inlayHints = {
+                typeHints = { enable = false },
+                parameterHints = { enable = false },
+                chainingHints = { enable = false },
+              },
             },
           },
         },

@@ -3,9 +3,9 @@
 -- Add any additional options here
 if vim.g.neovide then
   if vim.fn.has("win32") == 1 then
-    vim.o.guifont = "Iosevka_Nerd_Font_Mono,Noto_Sans_Mono_CJK_SC,Noto_Color_Emoji:h12"
+    vim.o.guifont = "Iosevka_Nerd_Font,Noto_Sans_CJK_SC,Noto_Color_Emoji:h12"
   elseif vim.fn.has("macunix") == 1 then
-    vim.o.guifont = "Iosevka_Nerd_Font_Mono,Noto_Sans_Mono_CJK_SC,Noto_Color_Emoji:h16"
+    vim.o.guifont = "Iosevka_Nerd_Font,Noto_Sans_Mono_SC,Noto_Color_Emoji:h16"
   end
   vim.g.neovide_window_blurred = true
   vim.g.neovide_floating_blur_amount_x = 2.0

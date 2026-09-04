@@ -2,9 +2,9 @@
 -- Default options that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/options.lua
 -- Add any additional options here
 if vim.g.neovide then
-  if vim.fn.has("win32") then
+  if vim.fn.has("win32") == 1 then
     vim.o.guifont = "Iosevka_Nerd_Font_Mono,Noto_Sans_Mono_CJK_SC,Noto_Color_Emoji:h12"
-  elseif vim.fn.has("macunix") then
+  elseif vim.fn.has("macunix") == 1 then
     vim.o.guifont = "Iosevka_Nerd_Font_Mono,Noto_Sans_Mono_CJK_SC,Noto_Color_Emoji:h16"
   end
   vim.g.neovide_window_blurred = true

@@ -11,7 +11,6 @@ return {
       },
       transparent_background = true,
       integrations = {
-        gitgutter = true,
         notify = true,
         treesitter_context = true,
       },

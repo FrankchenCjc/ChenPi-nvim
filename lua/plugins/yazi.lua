@@ -9,7 +9,7 @@ return {
       { "<c-up>", "<cmd>Yazi toggle<cr>", desc = "恢复上次 yazi 会话" },
     },
     opts = {
-      open_for_directories = false,
+      open_for_directories = true,
     },
   },
 }

@@ -9,10 +9,13 @@ if vim.g.neovide then
     vim.g.neovide_input_macos_option_key_is_meta = "only_left"
     vim.o.guifont = "Iosevka_Nerd_Font,Noto_Sans_Mono_SC,Noto_Color_Emoji:h16"
   end
+  vim.opt.winblend = 20
+  vim.o.winborder = "rounded"
   vim.o.background = "dark"
   vim.g.loaded_netrwPlugin = 1
-  vim.g.neovide_floating_blur_amount_x = 3.0
-  vim.g.neovide_floating_blur_amount_y = 3.0
+  vim.g.neovide_floating_blur_amount_x = 1.5
+  vim.g.neovide_floating_blur_amount_y = 1.5
+  vim.g.neovide_floating_shasow = true
   vim.g.neovide_scale_factor = 1.0
   vim.g.neovide_cursor_short_animation_length = 1.0
   vim.g.neovide_cursor_trail_size = 0.0

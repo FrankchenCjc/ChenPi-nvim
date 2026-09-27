@@ -11,12 +11,9 @@ if vim.g.neovide then
   end
   vim.o.background = "dark"
   vim.g.loaded_netrwPlugin = 1
-  vim.g.neovide_window_blurred = true
-  vim.g.neovide_floating_blur_amount_x = 2.0
-  vim.g.neovide_floating_blur_amount_y = 2.0
+  vim.g.neovide_floating_blur_amount_x = 3.0
+  vim.g.neovide_floating_blur_amount_y = 3.0
   vim.g.neovide_scale_factor = 1.0
   vim.g.neovide_cursor_short_animation_length = 1.0
   vim.g.neovide_cursor_trail_size = 0.0
-  vim.g.neovide_opacity = 0.85
-  vim.g.neovide_normal_opacity = 0.85
 end

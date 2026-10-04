@@ -1,7 +1,4 @@
 return {
-  -- 先掐掉 LazyVim 的默认主题，不然它会盖住你
-  -- { "folke/tokyonight.nvim", enabled = false },
-
   {
     "catppuccin/nvim",
     name = "catppuccin",
@@ -20,6 +17,7 @@ return {
         native_lsp = { enabled = true },
         mini = { enabled = true },
       },
+      -- 原始cattpuccin有这部分，不需要更改
       -- highlight_overrides = {
       --   mocha = function(c)
       --     return {
@@ -44,9 +42,12 @@ return {
       vim.cmd.colorscheme("catppuccin")
     end,
   },
-  { "LazyVim/LazyVim", opts = {
-    colorscheme = function()
-      vim.cmd.colorscheme("catppuccin")
-    end,
-  } },
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = function()
+        vim.cmd.colorscheme("catppuccin")
+      end,
+    },
+  },
 }

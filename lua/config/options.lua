@@ -8,6 +8,8 @@ if vim.g.neovide then
   elseif vim.fn.has("macunix") == 1 then
     vim.g.neovide_input_macos_option_key_is_meta = "only_left"
     vim.o.guifont = "Iosevka_Nerd_Font,Noto_Sans_Mono_SC,Noto_Color_Emoji:h16"
+  else
+    vim.o.guifont = "Iosevka_Nerd_Font,Noto_Sans_Mono_SC,Noto_Color_Emoji:h12"
   end
   vim.opt.winblend = 20
   vim.o.winborder = "rounded"
